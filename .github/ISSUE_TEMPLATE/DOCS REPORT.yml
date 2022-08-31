@@ -1,0 +1,41 @@
+name: Docs Report
+description: Help us improve our docs!
+labels: ["docs"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this report!
+
+  - type: textarea
+    id: current-behaviour
+    attributes:
+      label: Current Behaviour
+      description: Tell us what must be modified.
+      placeholder: A typo at line X!
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Expected Behaviour
+      description: How should we go about modifying it?
+      placeholder: Fix typo at line X.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Anything else that you want to share?
+      placeholder: The change suggested is important because...
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/McTechie/Swasthya/blob/main/CODE_OF_CONDUCT.md) and [Contributing Guidelines](https://github.com/McTechie/Swasthya/blob/main/CONTRIBUTING.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct and Contributing Guidelines
+          required: true
