@@ -19,7 +19,7 @@ const footerLinks = {
     {
       text: 'Pricing',
       href: '/pricing'
-    },
+    }
   ],
   tech: [
     {
@@ -33,7 +33,7 @@ const footerLinks = {
     {
       title: 'Glossary',
       links: ['EHR', 'Blockchain', 'Web3.0', 'Crypto Wallet']
-    },
+    }
   ]
 }
 

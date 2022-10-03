@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { LoginForm } from '../components'
-import { LeftOverlay } from '../utils'
 
 export default function Login() {
   return (
@@ -12,7 +11,12 @@ export default function Login() {
 
       <main className='grid grid-cols-3 bg-teal-100 bg-opacity-80'>
         <div className='col-span-1 h-screen'>
-          <Image src='/dummy.png' alt='Swasthya Login Banner' width={596} height={1024} />
+          <Image
+            src='/dummy.png'
+            alt='Swasthya Login Banner'
+            width={596}
+            height={1024}
+          />
         </div>
         <LoginForm />
       </main>

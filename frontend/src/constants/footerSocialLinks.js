@@ -10,7 +10,7 @@ const footerSocialLinks = [
   {
     path: '/footer--social-icons/linkedin.svg',
     href: 'https://www.linkedin.com/'
-  },
+  }
 ]
 
 export default footerSocialLinks

@@ -13,20 +13,20 @@ const Navbar = () => {
       </div>
 
       {/* links */}
-      <ul className='flex space-x-4 text-teal-600'>
-        <li className='nav-link'>About</li>
-        <li className='nav-link'>Services</li>
-        <li className='nav-link'>Pricing</li>
-        <li
+      <div className='flex space-x-4 text-teal-600'>
+        <p className='nav-link'>About</p>
+        <p className='nav-link'>Services</p>
+        <p className='nav-link'>Pricing</p>
+        <button
           onClick={() => router.push('/login')}
           className='cursor-pointer hover:scale-105 transition-all duration-300 flex space-x-2 items-center text-white bg-teal-600 py-2 px-4 rounded-lg'
         >
           Login
           <ArrowRightCircleIcon className='h-5 w-5 ml-2' />
-        </li>
-      </ul>
+        </button>
+      </div>
     </nav>
   )
 }
- 
+
 export default Navbar
