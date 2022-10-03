@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Jumbotron } from '../components'
+import { Navbar, Hero, Footer } from '../components'
 
 export default function Home() {
   return (
@@ -13,11 +13,13 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      {/* <Navbar /> */}
+      <Navbar />
 
-      <Jumbotron />
+      <main className='my-[5.2rem]'>
+        <Hero />
+      </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
