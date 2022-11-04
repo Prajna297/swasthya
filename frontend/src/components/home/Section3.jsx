@@ -41,7 +41,7 @@ const Section3 = () => {
             transition: { duration: 1 }
           }}
         >
-          <h2 className='text-8xl text-teal-800 opacity-80 text-right pb-10'>
+          <h2 className='text-6xl text-teal-800 opacity-80 text-right pb-10'>
             Fast &amp; Secure
           </h2>
 

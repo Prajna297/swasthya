@@ -5,7 +5,60 @@ import {
   MapPinIcon,
   PhoneIcon
 } from '@heroicons/react/24/outline'
-import { footerLinks, footerSocialLinks } from '../../constants'
+
+const footerLinks = {
+  page: [
+    {
+      text: 'Home',
+      href: '/home'
+    },
+    {
+      text: 'About Us',
+      href: '/about'
+    },
+    {
+      text: 'Services',
+      href: '/services'
+    },
+    {
+      text: 'Dashboard',
+      href: '/dashboard'
+    },
+    {
+      text: 'Pricing',
+      href: '/pricing'
+    }
+  ],
+  tech: [
+    {
+      title: 'Tech Stack',
+      links: ['NextJS', 'Sanity', 'Solidity', 'Moralis']
+    },
+    {
+      title: 'Initiatives',
+      links: ['WHO', 'UNICEF', 'India Govt.', 'UNHCR']
+    },
+    {
+      title: 'Glossary',
+      links: ['EHR', 'Blockchain', 'Web3.0', 'Crypto Wallet']
+    }
+  ]
+}
+
+const footerSocialLinks = [
+  {
+    path: '/footer--social-icons/instagram.svg',
+    href: 'https://instagram.com/'
+  },
+  {
+    path: '/footer--social-icons/twitter.svg',
+    href: 'https://twitter.com/'
+  },
+  {
+    path: '/footer--social-icons/linkedin.svg',
+    href: 'https://www.linkedin.com/'
+  }
+]
 
 const Footer = () => {
   const router = useRouter()

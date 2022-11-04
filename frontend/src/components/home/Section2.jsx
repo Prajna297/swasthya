@@ -22,7 +22,7 @@ const Section2 = () => {
             transition: { duration: 1 }
           }}
         >
-          <h2 className='text-8xl text-teal-800 opacity-80 pb-10'>
+          <h2 className='text-6xl text-teal-800 opacity-80 pb-10'>
             Powered by Blockchain
           </h2>
 

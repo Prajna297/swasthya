@@ -6,13 +6,13 @@ import { ArrowRightCircleIcon } from '@heroicons/react/20/solid'
 const Section1 = () => {
   const router = useRouter()
 
-  const handleSignIn = () => {
-    router.push('/login')
+  const handleNavigation = () => {
+    router.push('/dashboard')
   }
 
   return (
     <section className='overflow-hidden relative mb-48'>
-      <div className='grid grid-cols-2 px-10 py-32 mb-20'>
+      <div className='grid grid-cols-2 px-10 py-20 mb-20'>
         <motion.div
           className='p-5 relative bottom-20'
           viewport={{ once: true }}
@@ -41,7 +41,7 @@ const Section1 = () => {
             transition: { duration: 1 }
           }}
         >
-          <h2 className='text-8xl text-teal-800 opacity-80 text-right pb-10'>
+          <h2 className='text-6xl text-teal-800 opacity-80 text-right pb-10'>
             Hello, Swasthya
           </h2>
 
@@ -55,7 +55,7 @@ const Section1 = () => {
               tempore sint dolorem est voluptate.
             </p>
 
-            <button onClick={handleSignIn} className='section-btn'>
+            <button onClick={handleNavigation} className='section-btn'>
               Get Started
               <ArrowRightCircleIcon className='h-5 w-5 ml-2' />
             </button>

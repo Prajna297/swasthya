@@ -17,6 +17,10 @@
   .section-btn {
     @apply text-white text-base bg-teal-600 py-3 px-4 mx-2 mt-10 rounded-tr-2xl rounded-bl-2xl shadow-md hover:-translate-x-1 shadow-teal-300 hover:shadow-teal-400 scale-on-hover-sm flex space-x-3;
   }
+
+  .sidenav-item {
+    @apply opacity-50 hover:opacity-100 cursor-pointer flex items-center space-x-4 font-bold text-white transition-all duration-300 ease-in-out;
+  }
 }
 
 .wave {
