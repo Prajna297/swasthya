@@ -5,11 +5,7 @@ const AppointmentDetails = () => {
   const router = useRouter()
   const { patientId } = router.query
 
-  return (
-    <DashboardLayout>
-      Patient ID: {patientId}
-    </DashboardLayout>
-  )
+  return <DashboardLayout>Patient ID: {patientId}</DashboardLayout>
 }
 
 export default AppointmentDetails

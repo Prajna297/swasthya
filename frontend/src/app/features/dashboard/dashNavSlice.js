@@ -4,7 +4,7 @@ const dashNavSlice = createSlice({
   name: 'dashNav',
   initialState: 'Dashboard',
   reducers: {
-    setDashNav (_, action) {
+    setDashNav(_, action) {
       return action.payload
     }
   }

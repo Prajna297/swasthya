@@ -23,7 +23,7 @@ const DashNav = () => {
         >
           {isNotificationsActive ? (
             <BellRinging className='h-6 w-6 text-teal-700 cursor-pointer scale-on-hover' />
-            ) : (
+          ) : (
             <BellSilent className='h-6 w-6 text-teal-700 cursor-pointer scale-on-hover' />
           )}
         </div>

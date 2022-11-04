@@ -8,7 +8,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'online',
-    status: 'completed',
+    status: 'completed'
   },
   {
     patientName: 'Jaane Doe',
@@ -16,7 +16,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'offline',
-    status: 'pending',
+    status: 'pending'
   },
   {
     patientName: 'Rehn Doe',
@@ -24,7 +24,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'online',
-    status: 'pending',
+    status: 'pending'
   },
   {
     patientName: 'Yaa Doe',
@@ -32,7 +32,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'online',
-    status: 'pending',
+    status: 'pending'
   },
   {
     patientName: 'Prajna Moorthy',
@@ -40,7 +40,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'offline',
-    status: 'pending',
+    status: 'pending'
   },
   {
     patientName: 'Mcvean Soans',
@@ -48,7 +48,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'online',
-    status: 'pending',
+    status: 'pending'
   },
   {
     patientName: 'Mrunal Murudkar',
@@ -56,7 +56,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'online',
-    status: 'pending',
+    status: 'pending'
   },
   {
     patientName: 'Saptarshi Das',
@@ -64,8 +64,8 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'offline',
-    status: 'pending',
-  },
+    status: 'pending'
+  }
 ]
 
 const UpcomingAppointments = () => {
@@ -75,9 +75,7 @@ const UpcomingAppointments = () => {
     <div>
       {/* screen title */}
       <div className='flex items-center justify-between'>
-        <h1 className='text-3xl text-teal-700'>
-          Upcoming Appointments
-        </h1>
+        <h1 className='text-3xl text-teal-700'>Upcoming Appointments</h1>
 
         <form className='relative top-2'>
           <input
@@ -85,7 +83,7 @@ const UpcomingAppointments = () => {
             name='search'
             placeholder='Search by patient name'
             className='w-80 py-2 px-4 border-2 border-teal-700 rounded-tr-2xl rounded-bl-2xl'
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={event => setSearchQuery(event.target.value)}
           />
         </form>
       </div>
@@ -101,23 +99,33 @@ const UpcomingAppointments = () => {
         </div>
 
         {/* appointment list */}
-        {appointments.filter((appointment) => appointment.patientName.toLowerCase().includes(searchQuery)).map(appointment => (
-          <Link
-            key={appointment.patientId}
-            href={`/appointments/${appointment.patientId}`}
-          >
-            <div className='grid grid-cols-5 py-4 odd:bg-teal-100 transition-all duration-400 ease-in-out hover:bg-teal-700 hover:text-white cursor-pointer px-10'>
-              <h4>{appointment.patientName}</h4>
-              <p>{appointment.date}</p>
-              <p>{appointment.time}</p>
-              <p>{appointment.mode}</p>
-              <p>{appointment.status}</p>
-            </div>
-          </Link>
-        ))}
+        {appointments
+          .filter(appointment =>
+            appointment.patientName.toLowerCase().includes(searchQuery)
+          )
+          .map(appointment => (
+            <Link
+              key={appointment.patientId}
+              href={`/appointments/${appointment.patientId}`}
+            >
+              <div className='grid grid-cols-5 py-4 odd:bg-teal-100 transition-all duration-400 ease-in-out hover:bg-teal-700 hover:text-white cursor-pointer px-10'>
+                <h4>{appointment.patientName}</h4>
+                <p>{appointment.date}</p>
+                <p>{appointment.time}</p>
+                <p>{appointment.mode}</p>
+                <p>{appointment.status}</p>
+              </div>
+            </Link>
+          ))}
 
         <div className='my-10 text-sm text-gray-500'>
-          Showing {appointments.filter((appointment) => appointment.patientName.toLowerCase().includes(searchQuery)).length} Appointments
+          Showing{' '}
+          {
+            appointments.filter(appointment =>
+              appointment.patientName.toLowerCase().includes(searchQuery)
+            ).length
+          }{' '}
+          Appointments
         </div>
       </div>
     </div>
