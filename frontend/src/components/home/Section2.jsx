@@ -12,9 +12,7 @@ const Section2 = () => {
 
   return (
     <section className='relative overflow-hidden'>
-      <div
-        className='grid grid-cols-2 pl-20'
-      >
+      <div className='grid grid-cols-2 pl-20'>
         <motion.div
           viewport={{ once: true }}
           whileInView={{
@@ -38,10 +36,7 @@ const Section2 = () => {
               tempore sint dolorem est voluptate.
             </p>
 
-            <button
-              onClick={handleSignIn}
-              className='section-btn'
-            >
+            <button onClick={handleSignIn} className='section-btn'>
               <div className='flex space-x-3'>
                 Know How?
                 <ArrowRightCircleIcon className='h-5 w-5 ml-2' />
@@ -60,11 +55,7 @@ const Section2 = () => {
             transition: { duration: 1 }
           }}
         >
-          <Image
-            src='/section2.svg'
-            width={550}
-            height={550}
-          />
+          <Image src='/section2.svg' width={550} height={550} />
         </motion.div>
       </div>
     </section>

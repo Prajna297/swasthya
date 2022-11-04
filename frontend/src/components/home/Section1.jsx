@@ -20,7 +20,7 @@ const Section1 = () => {
             scale: [0.5, 1],
             x: [-100, 0],
             opacity: [0, 1],
-            transition: { duration: 1 },
+            transition: { duration: 1 }
           }}
         >
           <Image
@@ -55,10 +55,7 @@ const Section1 = () => {
               tempore sint dolorem est voluptate.
             </p>
 
-            <button
-              onClick={handleSignIn}
-              className='section-btn'
-            >
+            <button onClick={handleSignIn} className='section-btn'>
               Get Started
               <ArrowRightCircleIcon className='h-5 w-5 ml-2' />
             </button>

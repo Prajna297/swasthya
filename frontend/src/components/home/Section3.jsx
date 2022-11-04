@@ -55,10 +55,7 @@ const Section3 = () => {
               tempore sint dolorem est voluptate.
             </p>
 
-            <button
-              onClick={handleSignIn}
-              className='section-btn'
-            >
+            <button onClick={handleSignIn} className='section-btn'>
               <div className='flex space-x-3'>
                 Learn More
                 <ArrowRightCircleIcon className='h-5 w-5 ml-2' />
