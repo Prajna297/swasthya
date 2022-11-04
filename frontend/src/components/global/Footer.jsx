@@ -11,7 +11,7 @@ const Footer = () => {
   const router = useRouter()
 
   return (
-    <footer className='w-full bg-teal-600 text-white px-32 pt-16 pb-8 flex overflow-x-auto space-x-32'>
+    <footer className='w-full bg-teal-700 text-white px-32 pt-16 pb-8 flex overflow-x-auto space-x-32'>
       {/* left section - links */}
       <div className='flex flex-col space-y-32'>
         <div className='flex'>

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Navbar, Hero, Footer } from '../components'
+import { Navbar, Section1, Section2, Section3, Footer } from '../components'
 
 export default function Home() {
   return (
@@ -15,8 +15,10 @@ export default function Home() {
 
       <Navbar />
 
-      <main className='my-[5.2rem]'>
-        <Hero />
+      <main className='mt-[5.2rem]'>
+        <Section1 />
+        <Section2 />
+        <Section3 />
       </main>
 
       <Footer />

@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd frontend && yarn dev"
+    "start-frontend": "cd frontend && yarn dev",
+    "start-studio": "cd studio && yarn start",
+    "setup-frontend": "cd frontend && yarn",
+    "setup-studio": "cd studio && yarn"
   },
   "repository": {
     "type": "git",

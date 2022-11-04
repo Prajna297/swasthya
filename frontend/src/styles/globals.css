@@ -4,10 +4,51 @@
 
 @layer components {
   .scale-on-hover {
-    @apply hover:scale-105 transition-all ease-in-out;
+    @apply hover:scale-105 duration-300 transition-all ease-in-out;
+  }
+  .scale-on-hover-sm {
+    @apply hover:scale-[1.025] duration-300 transition-all ease-in-out;
   }
   
   .nav-link {
     @apply cursor-pointer hover:-translate-y-[2px] transition-all duration-200 ease-in-out p-3;
+  }
+
+  .section-btn {
+    @apply text-white text-base bg-teal-600 py-3 px-4 mx-2 mt-10 rounded-tr-2xl rounded-bl-2xl shadow-md hover:-translate-x-1 shadow-teal-300 hover:shadow-teal-400 scale-on-hover-sm flex space-x-3;
+  }
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -160px;
+  width: 200vw;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -165px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
   }
 }

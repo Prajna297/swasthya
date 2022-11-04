@@ -1,7 +1,7 @@
 const LoginForm = () => {
   return (
     <div className='m-auto col-span-2 bg-white py-11 px-10 w-[30rem] h-[40rem] shadow-lg border-b-8 border-teal-700'>
-      <h1 className='text-2xl text-slate-600 font-bold text-center'>
+      <h1 className='text-3xl text-slate-600 font-bold text-center'>
         Sign in to your account
       </h1>
 

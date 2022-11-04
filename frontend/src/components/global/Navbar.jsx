@@ -19,7 +19,7 @@ const Navbar = () => {
         <p className='nav-link'>Pricing</p>
         <button
           onClick={() => router.push('/login')}
-          className='cursor-pointer hover:scale-105 transition-all duration-300 flex space-x-2 items-center text-white bg-teal-600 py-2 px-4 rounded-lg'
+          className='text-white text-base bg-teal-600 py-3 px-4 mx-2 rounded-tr-2xl rounded-bl-2xl shadow-sm hover:shadow-md shadow-teal-300 hover:shadow-teal-400 scale-on-hover-sm flex space-x-2 items-center'
         >
           Login
           <ArrowRightCircleIcon className='h-5 w-5 ml-2' />

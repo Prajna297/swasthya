@@ -12,16 +12,17 @@ export default function Login() {
       <main className='grid grid-cols-3 bg-teal-100 bg-opacity-80'>
         <div className='col-span-1 h-screen'>
           <Image
-            src='/dummy.png'
+            src='/login--signin/doctor.svg'
             alt='Swasthya Login Banner'
+            objectFit='cover'
             width={596}
             height={1024}
           />
         </div>
+
         <LoginForm />
       </main>
 
-      <div className='bg-gradient-to-l from-black to-gray-400 fixed top-0 left-0 h-screen w-1/3 opacity-30' />
       <div className='bg-gradient-to-l from-black to-gray-800 fixed top-0 left-0 h-screen w-1/3 opacity-30' />
     </div>
   )
