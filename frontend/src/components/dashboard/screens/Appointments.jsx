@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { PlusCircleIcon } from '@heroicons/react/24/solid'
 
 const appointments = [
   {
@@ -68,27 +69,34 @@ const appointments = [
   }
 ]
 
-const UpcomingAppointments = () => {
+const Appointments = () => {
   const [searchQuery, setSearchQuery] = useState('')
 
   return (
     <div>
       {/* screen title */}
-      <div className='flex items-center justify-between'>
+      <div className='flex items-center justify-between mt-2'>
         <h1 className='text-3xl text-teal-700'>Upcoming Appointments</h1>
 
-        <form className='relative top-2'>
-          <input
-            type='text'
-            name='search'
-            placeholder='Search by patient name'
-            className='w-80 py-2 px-4 border-2 border-teal-700 rounded-tr-2xl rounded-bl-2xl'
-            onChange={event => setSearchQuery(event.target.value)}
-          />
-        </form>
+        <div className='flex justify-between'>
+          <form>
+            <input
+              type='text'
+              name='search'
+              placeholder='Search by patient name'
+              className='w-80 py-2 px-4 border-2 border-teal-700 rounded-tr-2xl rounded-bl-2xl outline-none'
+              onChange={event => setSearchQuery(event.target.value)}
+            />
+          </form>
+
+          <button className='ml-4 text-teal-600 hover:text-white bg-white hover:bg-teal-600 border-teal-600 border-4 border-double hover:border-transparent font-bold flex items-center space-x-1 px-4 rounded-tr-2xl rounded-bl-2xl hover:shadow-sm hover:shadow-teal-400 hover:scale-[1.05] transition-all duration-200 ease-in-out'>
+            <span>Create</span>
+            <PlusCircleIcon className='h-6 w-6' />
+          </button>
+        </div>
       </div>
 
-      <div className='mt-10 flex-1 text-center'>
+      <div className='mt-8 flex-1 text-center'>
         {/* headers */}
         <div className='grid grid-cols-5 font-semibold py-3 bg-teal-600 text-white px-10'>
           <p>Patient Name</p>
@@ -101,7 +109,7 @@ const UpcomingAppointments = () => {
         {/* appointment list */}
         {appointments
           .filter(appointment =>
-            appointment.patientName.toLowerCase().includes(searchQuery)
+            appointment.patientName.toLowerCase().includes(searchQuery.toLowerCase())
           )
           .map(appointment => (
             <Link
@@ -122,7 +130,7 @@ const UpcomingAppointments = () => {
           Showing{' '}
           {
             appointments.filter(appointment =>
-              appointment.patientName.toLowerCase().includes(searchQuery)
+              appointment.patientName.toLowerCase().includes(searchQuery.toLowerCase())
             ).length
           }{' '}
           Appointments
@@ -132,4 +140,4 @@ const UpcomingAppointments = () => {
   )
 }
 
-export default UpcomingAppointments
+export default Appointments

@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import { selectDashNav } from '../app/features/dashboard/dashNavSlice'
-import { DashMain } from '../components'
+import { DashScreen } from '../components'
 import { DashboardLayout } from '../layouts'
 
 const Dashboard = () => {
@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   return (
     <DashboardLayout>
-      <DashMain currentScreen={currentScreen} />
+      <DashScreen currentScreen={currentScreen} />
     </DashboardLayout>
   )
 }

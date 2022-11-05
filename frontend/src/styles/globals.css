@@ -21,13 +21,17 @@
   .sidenav-item {
     @apply opacity-50 hover:opacity-100 cursor-pointer flex items-center space-x-4 font-bold text-white transition-all duration-300 ease-in-out;
   }
+
+  .dashnav-btn {
+    @apply text-white text-base bg-teal-600 py-2 px-4 mx-2 rounded-tr-2xl rounded-bl-2xl shadow-sm hover:shadow-md shadow-teal-300 hover:shadow-teal-400 scale-on-hover-sm flex space-x-2 items-center;
+  }
 }
 
 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
   position: absolute;
   top: -160px;
-  width: 200vw;
+  width: 300vw;
   height: 198px;
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);

@@ -29,7 +29,7 @@ const DashNav = () => {
         </div>
         <button
           onClick={handleLogout}
-          className='text-white text-base bg-teal-600 py-2 px-4 mx-2 rounded-tr-2xl rounded-bl-2xl shadow-sm hover:shadow-md shadow-teal-300 hover:shadow-teal-400 scale-on-hover-sm flex space-x-2 items-center'
+          className='dashnav-btn'
         >
           Logout
         </button>

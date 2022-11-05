@@ -1,4 +1,4 @@
-import { DashNav, SidebarNav, DashFooter } from '../components'
+import { DashNav, SidebarNav, InfoBot, DashFooter } from '../components'
 
 const DashboardLayout = ({ children }) => {
   return (
@@ -10,6 +10,7 @@ const DashboardLayout = ({ children }) => {
         <div className='flex-1'>{children}</div>
       </main>
 
+      <InfoBot />
       <DashFooter />
     </div>
   )
