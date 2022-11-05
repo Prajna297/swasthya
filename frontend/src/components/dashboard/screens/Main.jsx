@@ -7,7 +7,9 @@ const Main = () => {
       <div className='flex items-center justify-between mb-8'>
         <h1 className='text-3xl text-teal-700 flex items-end space-x-3'>
           <span>Welcome, {name}</span>
-          <span className='text-base text-slate-400 italic relative bottom-[0.1rem]'>&#40;0x1234...5565&#41;</span>
+          <span className='text-base text-slate-400 italic relative bottom-[0.1rem]'>
+            &#40;0x1234...5565&#41;
+          </span>
         </h1>
       </div>
 

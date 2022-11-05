@@ -6,7 +6,7 @@ const patient = {
   name: 'Mcvean Soans',
   phone: '+91 12345 67890',
   dob: '30/03/2002',
-  address: '123, Some Street, Some City, Some State, Some Country',
+  address: '123, Some Street, Some City, Some State, Some Country'
 }
 
 const appointments = [
@@ -17,7 +17,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'online',
-    ailment: 'cough',
+    ailment: 'cough'
   },
   {
     doctorName: 'Jaane Doe',
@@ -26,7 +26,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'offline',
-    ailment: 'flu',
+    ailment: 'flu'
   },
   {
     doctorName: 'Rehn Doe',
@@ -35,7 +35,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'online',
-    ailment: 'diabetes',
+    ailment: 'diabetes'
   },
   {
     doctorName: 'Yaa Doe',
@@ -44,7 +44,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'online',
-    ailment: 'cough',
+    ailment: 'cough'
   },
   {
     doctorName: 'Prajna Moorthy',
@@ -53,7 +53,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'offline',
-    ailment: 'cough',
+    ailment: 'cough'
   },
   {
     doctorName: 'Mcvean Soans',
@@ -62,7 +62,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'online',
-    ailment: 'cough',
+    ailment: 'cough'
   },
   {
     doctorName: 'Mrunal Murudkar',
@@ -71,7 +71,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'online',
-    ailment: 'cough',
+    ailment: 'cough'
   },
   {
     doctorName: 'Saptarshi Das',
@@ -80,7 +80,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'offline',
-    ailment: 'cough',
+    ailment: 'cough'
   }
 ]
 

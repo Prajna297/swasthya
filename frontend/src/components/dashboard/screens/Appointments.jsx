@@ -109,7 +109,9 @@ const Appointments = () => {
         {/* appointment list */}
         {appointments
           .filter(appointment =>
-            appointment.patientName.toLowerCase().includes(searchQuery.toLowerCase())
+            appointment.patientName
+              .toLowerCase()
+              .includes(searchQuery.toLowerCase())
           )
           .map(appointment => (
             <Link
@@ -130,7 +132,9 @@ const Appointments = () => {
           Showing{' '}
           {
             appointments.filter(appointment =>
-              appointment.patientName.toLowerCase().includes(searchQuery.toLowerCase())
+              appointment.patientName
+                .toLowerCase()
+                .includes(searchQuery.toLowerCase())
             ).length
           }{' '}
           Appointments

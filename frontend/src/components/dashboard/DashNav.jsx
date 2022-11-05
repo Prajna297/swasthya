@@ -27,10 +27,7 @@ const DashNav = () => {
             <BellSilent className='h-6 w-6 text-teal-700 cursor-pointer scale-on-hover' />
           )}
         </div>
-        <button
-          onClick={handleLogout}
-          className='dashnav-btn'
-        >
+        <button onClick={handleLogout} className='dashnav-btn'>
           Logout
         </button>
       </div>

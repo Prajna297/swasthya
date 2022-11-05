@@ -5,6 +5,6 @@ import userRoleReducer from './features/dashboard/dashNavSlice'
 export const store = configureStore({
   reducer: {
     dashNav: dashNavReducer,
-    userRole: userRoleReducer,
+    userRole: userRoleReducer
   }
 })

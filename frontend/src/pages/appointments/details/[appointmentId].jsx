@@ -3,9 +3,7 @@ import { DashboardLayout } from '../../../layouts'
 const AppointmentDetails = () => {
   return (
     <DashboardLayout>
-      <div>
-        Appointment Details
-      </div>
+      <div>Appointment Details</div>
     </DashboardLayout>
   )
 }

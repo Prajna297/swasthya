@@ -21,7 +21,7 @@ const PreviousAppointments = ({ appointments }) => {
           onChange={event => setSearchQuery(event.target.value)}
         />
       </div>
-      
+
       <div className='mt-8 flex-1 text-center h-96 overflow-y-scroll'>
         {/* headers */}
         <div className='grid grid-cols-5 font-semibold py-3 bg-teal-600 text-white px-10 sticky top-0 z-10'>
@@ -34,18 +34,21 @@ const PreviousAppointments = ({ appointments }) => {
 
         {/* appointment list */}
         {appointments
-          .filter(appointment =>
-            appointment.doctorName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            appointment.ailment.toLowerCase().includes(searchQuery.toLowerCase())
+          .filter(
+            appointment =>
+              appointment.doctorName
+                .toLowerCase()
+                .includes(searchQuery.toLowerCase()) ||
+              appointment.ailment
+                .toLowerCase()
+                .includes(searchQuery.toLowerCase())
           )
           .map(appointment => (
             <Link
               key={appointment.doctorId}
               href={`/appointments/details/${appointment.appointmentId}`}
             >
-              <div
-              className='grid grid-cols-5 py-4 odd:bg-teal-100 transition-all duration-400 ease-in-out hover:bg-teal-700 hover:text-white cursor-pointer px-10'
-              >
+              <div className='grid grid-cols-5 py-4 odd:bg-teal-100 transition-all duration-400 ease-in-out hover:bg-teal-700 hover:text-white cursor-pointer px-10'>
                 <h4>{appointment.doctorName}</h4>
                 <p>{appointment.ailment}</p>
                 <p>{appointment.date}</p>
@@ -54,14 +57,18 @@ const PreviousAppointments = ({ appointments }) => {
               </div>
             </Link>
           ))}
-
       </div>
       <div className='my-10 text-sm text-gray-500 flex items-center justify-center'>
         Showing{' '}
         {
-          appointments.filter(appointment =>
-            appointment.doctorName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            appointment.ailment.toLowerCase().includes(searchQuery.toLowerCase())
+          appointments.filter(
+            appointment =>
+              appointment.doctorName
+                .toLowerCase()
+                .includes(searchQuery.toLowerCase()) ||
+              appointment.ailment
+                .toLowerCase()
+                .includes(searchQuery.toLowerCase())
           ).length
         }{' '}
         Appointments
