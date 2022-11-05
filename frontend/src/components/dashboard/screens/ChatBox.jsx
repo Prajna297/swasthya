@@ -1,8 +1,8 @@
 const ChatBox = () => {
   return (
-    <div>
-      <h1>Chat Box</h1>
-    </div>
+    <>
+      <h1 className='text-3xl text-teal-700 flex items-end space-x-3'>Chat Box Coming Soon...</h1>
+    </>
   )
 }
 

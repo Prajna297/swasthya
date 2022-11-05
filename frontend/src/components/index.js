@@ -17,3 +17,7 @@ export { default as InfoBot } from './dashboard/InfoBot'
 export { default as DashFooter } from './dashboard/DashFooter'
 export { default as DashScreen } from './dashboard/DashScreen'
 export { default as Appointments } from './dashboard/screens/Appointments'
+
+// appointments page components
+export { default as PersonalInformation } from './appointments/user/PersonalInformation'
+export { default as PreviousAppointments } from './appointments/user/PreviousAppointments'

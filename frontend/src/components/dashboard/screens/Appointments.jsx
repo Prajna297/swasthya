@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Link from 'next/link'
 import { PlusCircleIcon } from '@heroicons/react/24/solid'
+import Link from 'next/link'
 
 const appointments = [
   {
@@ -17,7 +17,7 @@ const appointments = [
     date: '30/03/2023',
     time: '10:00',
     mode: 'offline',
-    status: 'pending'
+    status: 'ongoing'
   },
   {
     patientName: 'Rehn Doe',
@@ -73,7 +73,7 @@ const Appointments = () => {
   const [searchQuery, setSearchQuery] = useState('')
 
   return (
-    <div>
+    <>
       {/* screen title */}
       <div className='flex items-center justify-between mt-2'>
         <h1 className='text-3xl text-teal-700'>Upcoming Appointments</h1>
@@ -114,7 +114,7 @@ const Appointments = () => {
           .map(appointment => (
             <Link
               key={appointment.patientId}
-              href={`/appointments/${appointment.patientId}`}
+              href={`/appointments/user/${appointment.patientId}`}
             >
               <div className='grid grid-cols-5 py-4 odd:bg-teal-100 transition-all duration-400 ease-in-out hover:bg-teal-700 hover:text-white cursor-pointer px-10'>
                 <h4>{appointment.patientName}</h4>
@@ -136,7 +136,7 @@ const Appointments = () => {
           Appointments
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

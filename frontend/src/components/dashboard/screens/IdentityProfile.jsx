@@ -1,8 +1,8 @@
 const IdentityProfile = () => {
   return (
-    <div>
-      <h1>Identity Profile</h1>
-    </div>
+    <>
+      <h1 className='text-3xl text-teal-700 flex items-end space-x-3'>Identity Profile Coming Soon...</h1>
+    </>
   )
 }
 
