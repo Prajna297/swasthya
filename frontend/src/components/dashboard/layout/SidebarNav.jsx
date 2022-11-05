@@ -33,7 +33,7 @@ const sideNavItems = [
 
 const SidebarNav = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true)
-  
+
   const router = useRouter()
   const activeLink = router.pathname
 
@@ -47,14 +47,13 @@ const SidebarNav = () => {
     >
       <div className='pt-20 mx-auto flex flex-col space-y-10'>
         {sideNavItems.map((item, index) => (
-          <Link
-            key={item.title + '-' + index}       
-            href={item.link}
-          >
+          <Link key={item.title + '-' + index} href={item.link}>
             <div
               className={`sidenav-item ${
                 index !== sideNavItems.length - 1 && 'border-b'
-              } pb-4 ${!sidebarOpen ? 'border-dotted' : 'border-solid'} ${activeLink === item.link && 'opacity-100'}`}
+              } pb-4 ${!sidebarOpen ? 'border-dotted' : 'border-solid'} ${
+                activeLink === item.link && 'opacity-100'
+              }`}
             >
               <item.Icon className='h-8 w-8 text-white' />
               {sidebarOpen && <p>{item.title}</p>}

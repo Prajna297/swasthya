@@ -104,25 +104,42 @@ const IdentityProfile = () => {
         </div>
         <div className='w-full grid grid-cols-2 text-center gap-10 bg-gray-50 p-10 border-2 border-teal-800 border-double shadow-sm border-swasthya mb-10'>
           <div className='border border-teal-700 border-swasthya overflow-hidden'>
-            <p className='font-bold bg-teal-700 text-white p-2 rounded-tr-2xl'>Name</p>
-            <p className='bg-teal-100 p-2 rounded-bl-2xl h-full'>Mcvean Soans</p>
+            <p className='font-bold bg-teal-700 text-white p-2 rounded-tr-2xl'>
+              Name
+            </p>
+            <p className='bg-teal-100 p-2 rounded-bl-2xl h-full'>
+              Mcvean Soans
+            </p>
           </div>
           <div className='border border-teal-700 border-swasthya overflow-hidden'>
-            <p className='font-bold bg-teal-700 text-white p-2 rounded-tr-2xl'>DOB</p>
+            <p className='font-bold bg-teal-700 text-white p-2 rounded-tr-2xl'>
+              DOB
+            </p>
             <p className='bg-teal-100 p-2 rounded-bl-2xl h-full'>30/03/2002</p>
           </div>
           <div className='border border-teal-700 border-swasthya overflow-hidden'>
-            <p className='font-bold bg-teal-700 text-white p-2 rounded-tr-2xl'>Phone</p>
-            <p className='bg-teal-100 p-2 rounded-bl-2xl h-full'>+91 98192 36390</p>
+            <p className='font-bold bg-teal-700 text-white p-2 rounded-tr-2xl'>
+              Phone
+            </p>
+            <p className='bg-teal-100 p-2 rounded-bl-2xl h-full'>
+              +91 98192 36390
+            </p>
           </div>
           <div className='border border-teal-700 border-swasthya overflow-hidden'>
-            <p className='font-bold bg-teal-700 text-white p-2 rounded-tr-2xl'>Email</p>
-            <p className='bg-teal-100 p-2 rounded-bl-2xl h-full'>mc.soans02@gmail.com</p>
+            <p className='font-bold bg-teal-700 text-white p-2 rounded-tr-2xl'>
+              Email
+            </p>
+            <p className='bg-teal-100 p-2 rounded-bl-2xl h-full'>
+              mc.soans02@gmail.com
+            </p>
           </div>
           <div className='col-span-2 border border-teal-700 border-swasthya overflow-hidden'>
-            <p className='font-bold bg-teal-700 text-white p-2 rounded-tr-2xl'>Address</p>
+            <p className='font-bold bg-teal-700 text-white p-2 rounded-tr-2xl'>
+              Address
+            </p>
             <p className='bg-teal-100 p-2 rounded-bl-2xl h-full'>
-              1st Floor, 1st Main, 1st Cross, 1st Block, 1st Stage, 1st Sector, 1st City, 1st State, 1st Country, 1st Pincode
+              1st Floor, 1st Main, 1st Cross, 1st Block, 1st Stage, 1st Sector,
+              1st City, 1st State, 1st Country, 1st Pincode
             </p>
           </div>
         </div>
