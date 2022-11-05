@@ -15,7 +15,10 @@ const DashNav = () => {
 
   return (
     <nav className='flex py-3 px-5 justify-between items-center bg-white sticky top-0 z-50 shadow-md'>
-      <Image src='/favicon.ico' width={42} height={42} />
+      <div className='flex items-center cursor-pointer' onClick={() => router.push('/dashboard')}>
+        <Image src='/logo.png' width={42} height={42} />
+        <p className='ml-3 font-bold text-teal-600'>Swasthya</p>
+      </div>
       <div className='flex items-center space-x-8'>
         <div
           onMouseEnter={() => setIsNotificationsActive(true)}
@@ -27,7 +30,7 @@ const DashNav = () => {
             <BellSilent className='h-6 w-6 text-teal-700 cursor-pointer scale-on-hover' />
           )}
         </div>
-        <button onClick={handleLogout} className='dashnav-btn'>
+        <button onClick={handleLogout} className='logout-btn'>
           Logout
         </button>
       </div>

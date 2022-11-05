@@ -10,13 +10,17 @@ export { default as Section3 } from './home/Section3'
 // login page components
 export { default as LoginForm } from './login/LoginForm'
 
+// dashboard layout components
+export { default as DashNav } from './dashboard/layout/DashNav'
+export { default as SidebarNav } from './dashboard/layout/SidebarNav'
+export { default as InfoBot } from './dashboard/layout/InfoBot'
+export { default as DashFooter } from './dashboard/layout/DashFooter'
+
 // dashboard page components
-export { default as DashNav } from './dashboard/DashNav'
-export { default as SidebarNav } from './dashboard/SidebarNav'
-export { default as InfoBot } from './dashboard/InfoBot'
-export { default as DashFooter } from './dashboard/DashFooter'
-export { default as DashScreen } from './dashboard/DashScreen'
+export { default as DashMain } from './dashboard/screens/DashMain'
 export { default as Appointments } from './dashboard/screens/Appointments'
+export { default as ChatBox } from './dashboard/screens/ChatBox'
+export { default as IdentityProfile } from './dashboard/screens/IdentityProfile'
 
 // appointments page components
 export { default as PersonalInformation } from './appointments/user/PersonalInformation'

@@ -1,5 +1,7 @@
 import { DashboardLayout } from '../../../layouts'
 import { PersonalInformation, PreviousAppointments } from '../../../components'
+import { ArrowLeftCircleIcon } from '@heroicons/react/24/outline'
+import { useRouter } from 'next/router'
 
 const patient = {
   id: '0x1234...5565',
@@ -85,14 +87,24 @@ const appointments = [
 ]
 
 const AppointmentDetails = () => {
+  const router = useRouter()
   // TODO: fetch data for patient using doctorId
 
   return (
     <DashboardLayout>
-      <div className='mx-20 my-14'>
-        <h1 className='text-3xl text-teal-700 flex items-end space-x-3'>
-          Patient Details
-        </h1>
+      <div>
+        <div className='flex justify-between'>
+          <h1 className='text-3xl text-teal-700 flex items-end space-x-3'>
+            Patient Details
+          </h1>
+          <button
+            onClick={() => router.back()}
+            className='dash-back-btn'
+          >
+            <ArrowLeftCircleIcon className='w-5 h-5' />
+            <span>Back</span>
+          </button>
+        </div>
 
         <PersonalInformation patient={patient} />
         <PreviousAppointments appointments={appointments} />

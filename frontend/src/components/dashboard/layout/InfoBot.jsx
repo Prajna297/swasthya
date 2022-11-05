@@ -38,7 +38,7 @@ const InfoBot = () => {
         className={`w-10 h-10 p-1 bg-teal-600 cursor-pointer scale-on-hover hover:shadow-md hover:shadow-teal-100 ${
           isOpen
             ? 'self-end rounded-br-2xl rounded-tl-2xl'
-            : 'rounded-tr-2xl rounded-bl-2xl'
+            : 'border-swasthya'
         }`}
       >
         {isOpen ? (
@@ -56,14 +56,16 @@ const InfoBot = () => {
 
           {/* faq list */}
           {faqList.map(faq => (
-            <button
-              key={faq.id}
-              className='text-gray-600 px-2 py-2 m-2 border border-teal-600 hover:bg-teal-600 hover:text-white transition-all duration-300 ease-in-out cursor-pointer flex justify-between items-center'
-              onClick={() => alert(faq.answer)}
-            >
+            <div className='mx-2 my-3'>
+              <button
+                key={faq.id}
+                className='text-gray-600 px-2 py-2 border border-teal-600 hover:bg-teal-600 hover:text-white transition-all duration-300 ease-in-out cursor-pointer flex justify-between items-center w-full'
+                onClick={() => alert(faq.answer)}
+              >
               <span>{faq.question}</span>
               <ArrowRightCircleIcon className='w-5 h-5' />
             </button>
+            </div>
           ))}
         </div>
       )}

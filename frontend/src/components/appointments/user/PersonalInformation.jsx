@@ -4,7 +4,7 @@ const PersonalInformation = ({ patient }) => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <div className='mt-10 py-4 px-10 mx-20 bg-white border-2 border-double border-teal-600 shadow-sm grid grid-cols-2 gap-x-10 items-center'>
+    <section className='mt-10 py-4 px-10 mx-20 border-2 border-double border-teal-600 shadow-sm grid grid-cols-2 gap-x-10 items-center bg-gray-50 border-swasthya'>
       <div className='col-span-2 py-2 mb-4 bg-teal-700'>
         <h4 className='text-xl text-center text-white'>Personal Information</h4>
       </div>
@@ -29,14 +29,14 @@ const PersonalInformation = ({ patient }) => {
           <span className='font-bold'>Address:</span> {patient.address}
         </h5>
       </div>
-      <div className='rounded-tr-2xl rounded-bl-2xl bg-slate-300 relative overflow-hidden h-96'>
+      <div className='border-swasthya bg-slate-300 relative overflow-hidden h-96'>
         <Image
           src='/login--signin/doctor.svg'
           objectFit='cover'
           layout='fill'
         />
       </div>
-    </div>
+    </section>
   )
 }
 

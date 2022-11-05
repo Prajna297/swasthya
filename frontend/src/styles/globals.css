@@ -6,8 +6,13 @@
   .scale-on-hover {
     @apply hover:scale-105 duration-300 transition-all ease-in-out;
   }
+  
   .scale-on-hover-sm {
     @apply hover:scale-[1.025] duration-300 transition-all ease-in-out;
+  }
+
+  .border-swasthya {
+    @apply rounded-tr-2xl rounded-bl-2xl;
   }
   
   .nav-link {
@@ -15,15 +20,19 @@
   }
 
   .section-btn {
-    @apply text-white text-base bg-teal-600 py-3 px-4 mx-2 mt-10 rounded-tr-2xl rounded-bl-2xl shadow-md hover:-translate-x-1 shadow-teal-300 hover:shadow-teal-400 scale-on-hover-sm flex space-x-3;
+    @apply text-white text-base bg-teal-600 py-3 px-4 mx-2 mt-10 border-swasthya shadow-md hover:-translate-x-1 shadow-teal-300 hover:shadow-teal-400 scale-on-hover-sm flex space-x-3;
   }
 
   .sidenav-item {
     @apply opacity-50 hover:opacity-100 cursor-pointer flex items-center space-x-4 font-bold text-white transition-all duration-300 ease-in-out;
   }
 
-  .dashnav-btn {
-    @apply text-white text-base bg-teal-600 py-2 px-4 mx-2 rounded-tr-2xl rounded-bl-2xl shadow-sm hover:shadow-md shadow-teal-300 hover:shadow-teal-400 scale-on-hover-sm flex space-x-2 items-center;
+  .logout-btn {
+    @apply text-white text-base bg-teal-600 py-2 px-4 mx-2 border-swasthya shadow-sm hover:shadow-md shadow-teal-300 hover:shadow-teal-400 scale-on-hover-sm flex space-x-2 items-center;
+  }
+
+  .dash-back-btn {
+    @apply ml-4 text-teal-600 hover:text-white bg-white hover:bg-teal-600 border-teal-600 border-4 border-double hover:border-transparent font-bold flex items-center space-x-1 px-4 border-swasthya hover:shadow-sm hover:shadow-teal-400 hover:scale-[1.05] transition-all duration-200 ease-in-out;
   }
 }
 

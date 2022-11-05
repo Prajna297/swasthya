@@ -5,7 +5,7 @@ const PreviousAppointments = ({ appointments }) => {
   const [searchQuery, setSearchQuery] = useState('')
 
   return (
-    <div className='mt-10 py-4 px-10 mx-20 bg-white border-2 border-double border-teal-600 shadow-sm'>
+    <section className='mt-10 py-4 px-10 mx-20 border-2 border-double border-teal-600 shadow-sm bg-gray-50 border-swasthya'>
       <div className='col-span-2 py-2 bg-teal-700'>
         <h4 className='text-xl text-center text-white'>
           Previous Appointments
@@ -17,7 +17,7 @@ const PreviousAppointments = ({ appointments }) => {
           type='text'
           name='search'
           placeholder='Search by doctor name or ailment'
-          className='w-80 py-2 px-4 border-2 border-teal-700 rounded-tr-2xl rounded-bl-2xl outline-none'
+          className='w-80 py-2 px-4 border-2 border-teal-700 border-swasthya outline-none'
           onChange={event => setSearchQuery(event.target.value)}
         />
       </div>
@@ -48,7 +48,7 @@ const PreviousAppointments = ({ appointments }) => {
               key={appointment.doctorId}
               href={`/appointments/details/${appointment.appointmentId}`}
             >
-              <div className='grid grid-cols-5 py-4 odd:bg-teal-100 transition-all duration-400 ease-in-out hover:bg-teal-700 hover:text-white cursor-pointer px-10'>
+              <div className='grid grid-cols-5 py-4 odd:bg-teal-100 even:bg-white transition-all duration-400 ease-in-out hover:bg-teal-700 hover:text-white cursor-pointer px-10'>
                 <h4>{appointment.doctorName}</h4>
                 <p>{appointment.ailment}</p>
                 <p>{appointment.date}</p>
@@ -73,7 +73,7 @@ const PreviousAppointments = ({ appointments }) => {
         }{' '}
         Appointments
       </div>
-    </div>
+    </section>
   )
 }
 

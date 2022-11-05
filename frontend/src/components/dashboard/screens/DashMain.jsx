@@ -1,8 +1,8 @@
-const Main = () => {
+const DashMain = () => {
   const name = 'Mcvean Soans'
 
   return (
-    <>
+    <div>
       {/* screen title */}
       <div className='flex items-center justify-between mb-8'>
         <h1 className='text-3xl text-teal-700 flex items-end space-x-3'>
@@ -30,8 +30,8 @@ const Main = () => {
           Need Help
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
-export default Main
+export default DashMain
